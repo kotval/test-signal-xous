@@ -1,0 +1,18 @@
+[package]
+name = "test-signal-xous"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+xous = "0.9.9"
+log = "0.4.14"
+xous-api-log-server = {version = "0.1.2", package = "xous-api-log-server"}
+
+libsignal-protocol = { git = "https://github.com/signalapp/libsignal-client", branch = "main" }
+zkgroup = { git = "https://github.com/signalapp/libsignal-client", branch = "main" }
+
+[patch.crates-io]
+curve25519-dalek = { git = 'https://github.com/signalapp/curve25519-dalek', tag = 'signal-curve25519-4.0.0' }
+
+[patch.crates-io.getrandom]
+path = "../xous-core/imports/getrandom"
