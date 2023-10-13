@@ -7,10 +7,11 @@ edition = "2021"
 xous = "0.9.9"
 log = "0.4.14"
 xous-api-log-server = {version = "0.1.2", package = "xous-api-log-server"}
-#libsignal-service = { git = "https://github.com/whisperfish/libsignal-service-rs", branch = "main" }
+libsignal-service = { git = "https://github.com/whisperfish/libsignal-service-rs", branch = "main" }
 
-libsignal-protocol = { git = "https://github.com/signalapp/libsignal-client", branch = "main" }
-zkgroup = { git = "https://github.com/signalapp/libsignal-client", branch = "main" }
+#libsignal-protocol = { git = "https://github.com/signalapp/libsignal", branch = "main" }
+libsignal-protocol = { git = "https://github.com/signalapp/libsignal", tag="v0.32.0" }
+#zkgroup = { git = "https://github.com/signalapp/libsignal", branch = "main" }
 
 [dev-dependencies]
 criterion = "0.5"
