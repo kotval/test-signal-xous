@@ -14,13 +14,13 @@ use support::*;
 type TestResult = Result<(), SignalProtocolError>;
 
 // Use this function to debug tests
-#[allow(dead_code)]
-fn init_logger() {
-    let _ = env_logger::builder()
-        .filter_level(log::LevelFilter::max())
-        .is_test(true)
-        .try_init();
-}
+//#[allow(dead_code)]
+//fn init_logger() {
+//    let _ = env_logger::builder()
+//        .filter_level(log::LevelFilter::max())
+//        .is_test(true)
+//        .try_init();
+//}
 
 #[test]
 fn test_basic_prekey() -> TestResult {
@@ -2048,7 +2048,7 @@ fn test_unacknowledged_sessions_eventually_expire() -> TestResult {
 }
 
 #[allow(clippy::needless_range_loop)]
-fn run_session_interaction(alice_session: SessionRecord, bob_session: SessionRecord) -> TestResult {
+pub fn run_session_interaction(alice_session: SessionRecord, bob_session: SessionRecord) -> TestResult {
     async {
         use rand::seq::SliceRandom;
 
