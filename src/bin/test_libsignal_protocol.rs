@@ -2,10 +2,10 @@ use xous_api_log_server as log_server;
 use std::{thread, time};
 use libsignal_protocol::{SignalProtocolError};
 
-#[path = "../tests/support/mod.rs"]
+#[path = "../../tests/support/mod.rs"]
 mod support;
 
-#[path = "../tests/session.rs"]
+#[path = "../../tests/session.rs"]
 mod session_test;
 
 use support::{initialize_sessions_v3,initialize_sessions_v4};
