@@ -31,11 +31,8 @@ fn main() -> ! {
     log::info!("running interaction");
     run_session_interaction(alice_session, bob_session).unwrap();
     log::info!("both successful");
-    let mut count = 0;
     loop {
-        println!("how do I refuse to return without spinning? Is this the right way?");
-        log::info!("count {}",count);
-        count+=1;
+        log::info!("sleeping");
         std::thread::sleep(timeout);
     }
 }
