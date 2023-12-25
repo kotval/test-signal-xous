@@ -4,15 +4,12 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-#xous = "0.9.55"
-xous = {path = "../xous-core/xous-rs"}
+xous = "0.9.55"
 log = "0.4.14"
 xous-api-log-server = {version = "0.1.2", package = "xous-api-log-server"}
-#libsignal-service = { git = "https://github.com/whisperfish/libsignal-service-rs", branch = "main" }
 
-#libsignal-protocol = { git = "https://github.com/signalapp/libsignal", branch = "main" }
 libsignal-protocol = { git = "https://github.com/signalapp/libsignal", tag="v0.32.0" }
-#zkgroup = { git = "https://github.com/signalapp/libsignal", branch = "main" }
+zkgroup = { git = "https://github.com/signalapp/libsignal", tag="v0.32.0" }
 
 rand = "0.8.5"
 #env_logger = "0.10.0"
