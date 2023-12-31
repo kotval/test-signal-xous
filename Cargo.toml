@@ -8,11 +8,9 @@ xous = "0.9.55"
 log = "0.4.14"
 xous-api-log-server = {version = "0.1.2", package = "xous-api-log-server"}
 
-libsignal-protocol = { git = "https://github.com/signalapp/libsignal", tag="v0.32.0" }
-zkgroup = { git = "https://github.com/signalapp/libsignal", tag="v0.32.0" }
+libsignal-protocol = { git = "https://github.com/signalapp/libsignal", tag="v0.33.0" }
 
 rand = "0.8.5"
-#env_logger = "0.10.0"
 futures-util = "0.3.7"
 
 [dev-dependencies]
@@ -21,9 +19,6 @@ hex-literal = "0.4.1"
 proptest = "1.0"
 hex = "0.4"
 uuid = "1.1.2"
-
-[patch.crates-io]
-curve25519-dalek = { git = 'https://github.com/signalapp/curve25519-dalek', tag = 'signal-curve25519-4.0.0' }
 
 [patch.crates-io.getrandom]
 path = "../xous-core/imports/getrandom"
